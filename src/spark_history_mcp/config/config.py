@@ -29,8 +29,10 @@ class ServerConfig(BaseModel):
     url: Optional[str] = None
     auth: AuthConfig = Field(None, alias="auth")
     default: bool = Field(False, alias="default")
-    verify_ssl: bool = Field(True, alias="verify_ssl")
-    emr_cluster_arn: Optional[str] = None  # EMR specific field
+    verify_ssl: bool = Field(True, alias="verifySSL")
+    emr_cluster_arn: Optional[str] = Field(
+        None, alias="emrClusterArn"
+    )  # EMR specific field
 
 
 class McpConfig(BaseModel):

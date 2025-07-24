@@ -93,7 +93,7 @@ class TestEMRIntegration(unittest.TestCase):
         # Set up the mock config
         mock_config = MagicMock()
         mock_config.servers = {
-            "emr": ServerConfig(
+            "emr": MagicMock(
                 emr_cluster_arn=self.emr_cluster_arn, default=True, verify_ssl=True
             )
         }

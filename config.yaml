@@ -12,7 +12,7 @@ servers:
   # Production server example
   # production:
   #   url: "https://spark-history.company.com:18080"
-  #   verify_ssl: true
+  #   verifySSL: true
   #   auth:
       # Use environment variables for production
       # username: ${SHS_SPARK_USERNAME}
@@ -22,19 +22,19 @@ servers:
   # Staging server example
   # staging:
   #   url: "https://staging-spark-history.company.com:18080"
-  #   verify_ssl: true
+  #   verifySSL: true
   #   auth:
       # username: ${SHS_SPARK_USERNAME}
       # token: ${SHS_SPARK_TOKEN}
 
   # AWS Glue Spark History Server example
-  # glue_ec2:
+  # glueEC2:
   #   url: ""
-  #   verify_ssl: false
+  #   verifySSL: false
 
   # Amazon EMR-EC2 Spark History Server example
-  # emr_persistent_ui:
-  #   emr_cluster_arn: "<EMR Cluster ARN>"
+  # emrPersistentUi:
+  #   emrClusterArn: "<EMR Cluster ARN>"
 
 mcp:
   transports:
