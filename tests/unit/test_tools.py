@@ -426,9 +426,7 @@ class TestTools(unittest.TestCase):
 
         # Call with filters
         result = list_applications(
-            status=["COMPLETED"],
-            min_date="2024-01-01",
-            limit=10
+            status=["COMPLETED"], min_date="2024-01-01", limit=10
         )
 
         # Verify results
